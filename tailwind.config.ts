@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["DM Serif Display", "serif"],
-        sans: ["Space Grotesk", "sans-serif"],
+        serif: ["Playfair Display", "serif"],
+        sans: ["Raleway", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -55,6 +55,11 @@ export default {
           DEFAULT: "hsl(var(--hero-bg))",
           foreground: "hsl(var(--hero-foreground))",
           muted: "hsl(var(--hero-muted))",
+        },
+        warm: {
+          DEFAULT: "hsl(var(--warm))",
+          light: "hsl(var(--warm-light))",
+          dark: "hsl(var(--warm-dark))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

@@ -1,20 +1,24 @@
+import logo from "@/assets/nuhaus-logo-2.png";
+
 const Footer = () => {
   return (
-    <footer className="py-12 bg-hero border-t border-hero-muted/20">
+    <footer className="py-12 bg-hero border-t border-hero-muted/15">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
-        <p className="text-hero-foreground font-serif text-xl">Studio.</p>
+        <img src={logo} alt="Nuhaus Design" className="h-6 opacity-80" />
         <nav className="flex gap-8">
-          {["Work", "Services", "About", "Contact"].map((link) => (
+          {["Showroom", "Móveis", "Iluminação", "Quadros", "Contato"].map((link) => (
             <a
               key={link}
-              href="#"
-              className="text-hero-muted text-sm hover:text-hero-foreground transition-colors"
+              href={`#${link.toLowerCase()}`}
+              className="text-hero-muted text-xs tracking-wider uppercase hover:text-hero-foreground transition-colors"
             >
               {link}
             </a>
           ))}
         </nav>
-        <p className="text-hero-muted text-sm">© 2026 Studio. All rights reserved.</p>
+        <p className="text-hero-muted text-xs">
+          © 2026 Nuhaus Design. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   );
